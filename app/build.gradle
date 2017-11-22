@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        buildConfigField 'boolean', 'IS_MOCK', 'true'
+        buildConfigField 'boolean', 'IS_MOCK', 'false'
     }
     buildTypes {
         release {
@@ -33,13 +33,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
 
-//    implementation "com.squareup.retrofit2:retrofit:2.3.0"
-//    implementation "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
-//    implementation "com.squareup.retrofit2:converter-gson:2.3.0"
+    implementation "com.squareup.retrofit2:retrofit:2.3.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.3.0"
 
-//    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
 
 
     //GSON
     implementation 'com.google.code.gson:gson:2.8.1'
+
 }
